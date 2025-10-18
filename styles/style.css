@@ -75,7 +75,9 @@ ol {
 }
 
 .result__video-container {
-  
+  margin-bottom: 16px;
+  height: 386px;
+  width: 711px;
 }
 
 .search-form {
@@ -88,8 +90,9 @@ ol {
 }
 
 .result__video {
-  height: 386px;
-  width: 711px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .title {
@@ -107,4 +110,26 @@ ol {
   width: 390px;
   max-height: 566px;
   overflow: auto;
+}
+
+.content__list {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: start;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
 }
