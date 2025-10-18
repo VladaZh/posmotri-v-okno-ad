@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -40,6 +43,7 @@ ol {
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
+  height: 298px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
@@ -48,4 +52,59 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1140px;
+  max-height: 534px;
+  align-items: end;
+  gap: 30px;
+  
+}
+
+.result {
+  grid-area: auto;
+}
+
+.content__details {
+  grid-area: auto;
+  max-width: 399px;
+  max-height: 534px;
+}
+
+.result__video-container {
+  
+}
+
+.search-form {
+  height: 54px;
+  width: 711px;
+  justify-self: start;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.result__video {
+  height: 386px;
+  width: 711px;
+}
+
+.title {
+  max-width: 259px;
+  max-height: 210px;
+  margin-bottom: 26px;
+}
+
+.search-form__fieldset {
+  max-width: 225px;
+  max-height: 54px;
+}
+
+.content__list-container {
+  width: 390px;
+  max-height: 566px;
+  overflow: auto;
 }
