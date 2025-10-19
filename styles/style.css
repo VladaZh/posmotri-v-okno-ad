@@ -80,6 +80,7 @@ ol {
   margin-bottom: 16px;
   height: 386px;
   width: 711px;
+  position: relative;
 }
 
 .search-form {
@@ -121,6 +122,7 @@ ol {
   display: block;
   padding-left: 1px;
   padding-top: 1px;
+  position: relative;
 }
 
 .content__list {
